@@ -26,5 +26,20 @@ public class CV {
 		this.competences = competences;
 		
 	}
+	public static void main(String[] args) {
+		
+		String[] compVick = {"Linux", "Java", "C#", "HTML", "Javascript"};
+		String[] compLauren = {"Linux", "Java", "C#", "HTML", "Javascript"};
+		
+		System.out.println("Bienvenue chez Barette!");
+		
+		CV vickie = new CV("Langlois", "Vickie", "Information de Gestion", "Apprendre de nouvelles compétences", 1, compVick);
+		CV lauren = new CV("Perez", "Lauren", "Information de Gestion", "Apprendre de nouvelles compétences", 0, compLauren);
+		
+		vickie.affiche();
+		lauren.affiche();
+	}
+	
+		
 
 }
